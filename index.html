@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="mediaqueries.css" class="rel">
 </head>
 <body>
+   <!-- For Desktop Navigation -->
    <nav id="desktop-nav">
       <div class="logo">VSH Reddy</div>
       <div>
@@ -20,6 +21,7 @@
       </div>
    </nav>
 
+   <!-- For hanburger navigation list opening icon -->
    <nav id="hamburger-nav">
       <div class="logo">VSH Reddy</div>
       <div class="hamburger-menu">
@@ -28,7 +30,7 @@
             <span></span>
             <span></span>
          </div>
-         
+
          <div class="menu-links">
              <li><a href="#about" onclick="toggleMenu()">About</a></li>
              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -37,6 +39,77 @@
          </div>
       </div>
    </nav>
+
+   <!-- Profile Details -->
+   <section id="profile">
+      <div class="section__pic-container">
+         <img src="./assets/VSHR_Grad.png" alt="VSH Reddy profile picture" class="src" />
+      </div>
+
+      <div>
+         <!-- Main Section Text -->
+         <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">VSH Reddy</h1>
+            <p class="section__text__p2">Full Stack Developer (Java)</p>
+
+            <!-- Buttons Container -->
+            <div class="btn-container">
+                <button class="btn btn-color-2" id = "ResumeButton" onclick="window.open('./assets/VSHR.pdf')">Open Resume</button>
+
+            <button class="btn btn-color-1" id = "ContactButton" onclick="location.href ='./#contact'">View my Contact Details</button>
+
+            </div>
+           
+            <!-- Socials Container -->
+            <div id="socials-container">
+
+               <!-- Linkedin Details -->
+               <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/vsaihruthikreddy/'" />
+
+               
+               <!-- Github profile details -->
+                 <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/VarakanthamSaiHruthikReddy975'"/>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="section__text__p1">About Me</h1>
+      <div class="section-container">
+         <div class="section__pic-container">
+            <img src="./assets/Experience1.jpg" alt="Profile picture" class="about-pic"/>
+         </div>
+         <div class="about-details-container">
+            <div class="about-containers">
+               <div class="details-container">
+                  <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+
+                  <h3>Experience</h3>
+                  <p>2+ years <br/> FullStack Development</p>
+               </div>
+               <div class="details-container">
+                    <img src="./assets/education.png" alt="Education Icon" class="icon" />
+                  <!-- Education Details -->
+                  <h3>Education</h3>
+                  <p>M.Sc. Masters Degree <br/> Management Information Systems</p>
+
+                  <br><br>
+                  <p>B.Tech. Bachelor's Degree <br/> Computer Science & Engineering</p>
+               </div>
+            </div>
+
+            <div class="text-container">
+               <p>I did my bachelor's of technology in CVR College of Engineering </p>
+            </div>
+         </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'" />
+   </section>
    <script src-="script.js"></script>
 </body>
 </html>
